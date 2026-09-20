@@ -11,7 +11,7 @@ cask "sony-controller-macos" do
 
   app "SonyHeadphonesMac.app"
 
-  postflight_steps do
+  postflight do
     system_command "/usr/bin/xattr",
                     args: ["-dr", "com.apple.quarantine", "#{appdir}/SonyHeadphonesMac.app"],
                     sudo: false
