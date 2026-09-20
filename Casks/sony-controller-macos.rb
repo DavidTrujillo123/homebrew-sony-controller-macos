@@ -7,11 +7,11 @@ cask "sony-controller-macos" do
   desc "Controla ANC/EQ/batería/volumen de tus Sony WH-1000XM5 desde la barra de menú"
   homepage "https://github.com/DavidTrujillo123/sony-controller-macos"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "SonyHeadphonesMac.app"
 
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
                     args: ["-dr", "com.apple.quarantine", "#{appdir}/SonyHeadphonesMac.app"],
                     sudo: false
