@@ -4,7 +4,7 @@ cask "sony-controller-macos" do
 
   url "https://github.com/DavidTrujillo123/sony-controller-macos/releases/download/v0.1.0/SonyHeadphonesMac-0.1.0.zip"
   name "Sony Controller macOS"
-  desc "Controla ANC/EQ/batería/volumen de tus Sony WH-1000XM5 desde la barra de menú"
+  desc "Control ANC/EQ/battery/volume for your Sony WH-1000XM5 from the menu bar"
   homepage "https://github.com/DavidTrujillo123/sony-controller-macos"
 
   depends_on macos: :ventura
